@@ -8,9 +8,7 @@ Src/SQLite3.h Src/SQLite3.dll:
 	@echo ***
 
 SQLite3.h: Src/SQLite3.h SQLite3H.sed
-	copy Src\SQLite3.h .\SQLite3.tmp
-	sed -f SQLite3H.sed <SQLite3.tmp >SQLite3.h
-	del .\SQLite3.tmp
+	sed -f SQLite3H.sed <Src\SQLite3.h >SQLite3.h
 
 SQLite3Def.def: SQLite3.h SQLite3.prj SQLite3Def.sed
 	h2d =p SQLite3.prj
