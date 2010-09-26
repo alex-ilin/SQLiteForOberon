@@ -1,0 +1,66 @@
+-BACKEND=NATIVE
+-GENENUM=ENUM
+-DEFPFX=""
+!header <SQLite3.h>
+  #define _WIN32
+  #define _MSC_VER
+  #variant LONG : LONGINT
+  #variant OutputMessageProc(1): VAR ARRAY
+  #variant Load(1): VAR ARRAY
+  #variant LoadU(1): VAR ARRAY
+  #variant Save(2): VAR ARRAY
+  #variant SaveU(2): VAR ARRAY
+  #variant AcquireMemory(1): VAR
+  #variant AcquireMemory(2): VAR
+  #variant RegisterLocalPlugin(1): VAR ARRAY
+  #variant RegisterLocalPlugin(2): VAR ARRAY
+  #variant RegisterLocalPlugin(3): VAR ARRAY
+  #variant RegisterLocalPlugin(4): VAR ARRAY
+  #variant RegisterExternalPlugin(0): VAR ARRAY
+  #variant RegisterExternalPlugin(1): VAR ARRAY
+  #variant RegisterExternalPlugin(2): VAR ARRAY
+  #variant RegisterExternalPlugin(3): VAR ARRAY
+  #variant RegisterExternalPlugin(4): VAR ARRAY
+  #variant GetFIFFromFormat(0): VAR ARRAY
+  #variant GetFIFFromMime(0): VAR ARRAY
+  #variant GetFIFFromFilename(0): VAR ARRAY
+  #variant GetFIFFromFilenameU(0): VAR ARRAY
+  #variant OpenMultiBitmap(1): VAR ARRAY
+  #variant GetLockedPageNumbers(2): VAR
+  #variant GetFileType(0): VAR ARRAY
+  #variant GetFileTypeU(0): VAR ARRAY
+  #variant LookupX11Color(0): VAR ARRAY
+  #variant LookupX11Color(1): VAR
+  #variant LookupX11Color(2): VAR
+  #variant LookupX11Color(3): VAR
+  #variant LookupSVGColor(0): VAR ARRAY
+  #variant LookupSVGColor(1): VAR
+  #variant LookupSVGColor(2): VAR
+  #variant LookupSVGColor(3): VAR
+  #variant GetPixelIndex(3): VAR
+  #variant GetPixelColor(3): VAR
+  #variant SetPixelIndex(3): VAR
+  #variant SetPixelColor(3): VAR
+  #variant GetBackgroundColor(1): VAR
+  #variant SetBackgroundColor(1): VAR
+  #variant SetTagKey(1): VAR ARRAY
+  #variant SetTagDescription(1): VAR ARRAY
+  #variant SetMetadata(2): VAR ARRAY
+  #variant GetMetadata(2): VAR ARRAY
+  #variant TagToString(2): VAR ARRAY
+  #variant JPEGTransform(0): VAR ARRAY
+  #variant JPEGTransform(1): VAR ARRAY
+  #variant GetHistogram(1): VAR ARRAY
+  #variant ApplyColorMapping(1): VAR ARRAY
+  #variant ApplyColorMapping(2): VAR ARRAY
+  #variant SwapColors(1): VAR
+  #variant SwapColors(2): VAR
+  #variant ApplyPaletteIndexMapping(1): VAR ARRAY
+  #variant ApplyPaletteIndexMapping(2): VAR ARRAY
+  #variant SwapPaletteIndices(1): VAR
+  #variant SwapPaletteIndices(2): VAR
+  #variant JPEGCrop(0): VAR ARRAY
+  #variant JPEGCrop(1): VAR ARRAY
+!end
+!module <SQLite3.h>
+!name <SQLite3.h> SQLite3Def
