@@ -32,3 +32,6 @@ SQLite3.lib: SQLite3.idf
 	copy /Y SQLite3.lib ..\SQLite3.lib
 
 install: ../def/Amadeus/SQLite3Def.def ../SQLite3.lib
+
+test: install
+	make -C ..\..\A3Test test
