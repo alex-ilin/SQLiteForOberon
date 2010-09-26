@@ -7,9 +7,6 @@
 # the 6th line, which is the line with the second function name.
 6,$ s/   sqlite3_/,  sqlite3_/
 
-# rename imported functions to shorten the ugly C-style prefix
-s/FreeImage_\([a-zA-Z_0-9]*\)\([@0-9]*\)/FreeImage_\1\2 AS FI_\1/
-
 # Replace "LIBRARY Name" with "FROM Name IMPORT"
 s/LIBRARY \([a-zA-Z0-9\.]*\)/FROM \1 IMPORT/
 # remove EXPORTS keyword

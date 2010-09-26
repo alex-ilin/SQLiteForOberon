@@ -29,11 +29,5 @@
 / SQLITE_STMTSTATUS_FULLSCAN_STEP = 1;/ i\CONST
 / sqlite3_mutex = sqlite3;/ i\TYPE
 
-# remove dummy variable added to struct types for differentiation
-/[A-Za-z]\+ = RECORD/ {
-   N
-   s/\([A-Za-z]\+\) = RECORD.* dummy\1[ ]*: SYSTEM.int;/\1 = RECORD/
-}
-
 # since all array parameters are actually pointers, allow to pass NIL everywhere
 s/VAR \([A-Za-z_]\+\): ARRAY OF/VAR [NIL] \1: ARRAY OF/g
