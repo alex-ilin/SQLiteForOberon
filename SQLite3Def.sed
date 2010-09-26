@@ -9,7 +9,7 @@
 3 i\<* ENUMSIZE="4" *>
 
 # remove some ugly prefixes from type and constant names
-#s/H2D_Ptr/Ptr/g
+s/H2D_Ptr/Ptr/g
 
 # some points in the header require insertion of additional TYPE or CONST keywords
 # for some reason H2D does not handle those places properly
