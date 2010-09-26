@@ -7,7 +7,14 @@
   #define _WIN32
   #variant sqlite3_open(0): ARRAY
   #variant sqlite3_open(1): VAR
+  #variant sqlite3_open16(1): VAR
+  #variant sqlite3_open_v2(1): VAR
   #variant sqlite3_exec(1): ARRAY
+  #variant sqlite3_prepare(3): VAR
+  #variant sqlite3_prepare_v2(3): VAR
+  #variant sqlite3_prepare16(3): VAR
+  #variant sqlite3_prepare16_v2(3): VAR
+  #variant sqlite3_blob_open(6): VAR
 !end
 !module <SQLite3.h>
 !name <SQLite3.h> SQLite3Def
