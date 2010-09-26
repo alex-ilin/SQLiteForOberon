@@ -1,11 +1,11 @@
 # This is a SED helper script. It converts SQLite3 export definition file
 # (edf) to SQLite3 import definition file (idf).
-# Copyright (c) Alexander Iljin, 2008.
+# Copyright (c) Alexander Iljin, 2010.
 
 # the list of imported functions must be comma-separated. Luckily, all
-# functions except the first one have underscore in front of name, so we put
-# comma before that
-s/   _/   ,_/
+# functions have the same prefix, so we put comma before that. We start with
+# the 6th line, which is the line with the second function name.
+6,$ s/   sqlite3_/,  sqlite3_/
 
 # rename imported functions to shorten the ugly C-style prefix
 s/FreeImage_\([a-zA-Z_0-9]*\)\([@0-9]*\)/FreeImage_\1\2 AS FI_\1/
