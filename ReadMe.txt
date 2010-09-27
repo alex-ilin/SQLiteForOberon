@@ -1,4 +1,4 @@
-This foder contains the make script to create files necessary to import
+This folder contains the make script to create files necessary to import
 functions from SQLite3.dll. To make use of the scripts, place the following
 files in the Src subfolder:
   Src\SQLite3.dll
